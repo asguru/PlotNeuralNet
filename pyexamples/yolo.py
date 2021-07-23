@@ -11,7 +11,8 @@ arch = [
     
     #input
     to_input( '../examples/YOLO/left2159.jpg', width=12, height=9),
-     
+    to_Conv("conv1", 640, 16, offset="(0,0,0)", to="(0,0,0)", height=48, depth=64, width=2 ),
+    to_Pool("pool1", offset="(0,0,0)", to="(conv1-east)", height=24, depth=32),
     to_end() 
     ]
 
