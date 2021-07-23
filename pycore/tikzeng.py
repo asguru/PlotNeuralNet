@@ -48,12 +48,12 @@ def to_Conv( name, s_filer=256, n_filer=64, offset="(0,0,0)", to="(0,0,0)", widt
         name=""" + name +""",
         caption="""+ caption +r""",
         xlabel={{"""+ str(n_filer) +""", }},
-        ylabel={{"""+ str(int(n_filer * (3.0/4.0))) +""", }},
+        ylabel={{"""+ str(int(s_filer * (3.0/4.0))) +""", }},
         zlabel="""+ str(s_filer) +""",
         fill=\ConvColor,
         height="""+ str(height) +""",
         width="""+ str(width) +""",
-        depth="""+ str(int(depth * (3.0 / 4.0))) +"""
+        depth="""+ str(depth) +"""
         }
     };
 """
