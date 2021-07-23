@@ -53,7 +53,7 @@ def to_Conv( name, s_filer=256, n_filer=64, offset="(0,0,0)", to="(0,0,0)", widt
         fill=\ConvColor,
         height="""+ str(height) +""",
         width="""+ str(width) +""",
-        depth="""+ str(depth) +"""
+        depth="""+ str(int(depth * (3.0 / 4.0))) +"""
         }
     };
 """
